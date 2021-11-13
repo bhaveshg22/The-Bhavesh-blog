@@ -19,13 +19,9 @@ function App() {
 
             <Route exact path='/' component={Home}/>
 
-            <Route path='/Create'>
-              <Create />
-            </Route>
+            <Route path='/Create' component={Create}/>
 
-            <Route path='/blogs/:id'>
-              <BlogDetails />
-            </Route>
+            <Route path='/blogs/:id' component={BlogDetails}/>
 
             <Route path='*'>
               <NotFound />
